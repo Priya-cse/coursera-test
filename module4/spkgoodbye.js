@@ -1,4 +1,5 @@
 (function(window) {
+	var byeSpeaker = new Object();
 	var speakWord = "Good Bye";
 	var byeSpeaker = function (name) {
   		console.log(speakWord + " " + name);
