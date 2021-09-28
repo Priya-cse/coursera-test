@@ -1,17 +1,25 @@
 (function () {
 
-var names = ["Priya", "Jimmy", "Jen", "Jerry", "Tom", "Oggy", "Chutki", "Pooja", "Tokyo", "Denver"];
-
-for (var i = 0; i < names.length; i++) {
-  var firstLetter = names[i].charAt(0).toLowerCase();
-
-  if (firstLetter === 'j') {
-    byeSpeaker(names[i]);
-  }
-  else {
-    helloSpeaker(names[i]);
-  }
-}
-
+    var names = [
+        "Yaakov", 
+        "John", 
+        "Jen", 
+        "Jason", 
+        "Paul", 
+        "Frank", 
+        "Larry", 
+        "Paula", 
+        "Laura", 
+        "Jim",
+        "jese"
+    ];
+    for (var i = 0; i < names.length; i++) {
+      var firstLetterLowerCase = names[i].charAt(0).toLowerCase();
+      if (firstLetterLowerCase === 'j') {
+        byeSpeaker.speak(names[i]);
+      } else {
+        helloSpeaker.speak(names[i]);
+      }
+    }
+    
 })();
-
